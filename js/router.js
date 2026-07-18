@@ -23,3 +23,16 @@ async function loadPage(page) {
         console.error(err);
     }
 }
+
+window.addEventListener("hashchange", () => {
+
+    const page =
+        location.hash.replace("#", "") || "dashboard";
+
+    console.log("Loading:", page);
+
+    loadPage(page);
+
+});
+
+window.dispatchEvent(new Event("hashchange"));
