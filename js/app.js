@@ -1,13 +1,24 @@
-const time = document.getElementById("time");
-const btn = document.getElementById("btnTest");
-const result = document.getElementById("result");
+async function loadComponent(id, file) {
 
-time.textContent =
-    "Current Time : " +
-    new Date().toLocaleString();
+    const html = await fetch(file);
 
-btn.addEventListener("click", () => {
+    document.getElementById(id).innerHTML =
+        await html.text();
 
-    result.textContent =
-        "JavaScript is working successfully!";
-});
+}
+
+async function init() {
+
+    await loadComponent(
+        "sidebar",
+        "components/sidebar.html"
+    );
+
+    await loadComponent(
+        "header",
+        "components/header.html"
+    );
+
+}
+
+init();
