@@ -7,8 +7,7 @@ async function loadPage(page) {
         await response.text();
 
     document
-        .getElementById("content")
-        .innerHTML = html;
+        .getElementById("content").innerHTML = html;
 
 }
 
