@@ -1,23 +1,25 @@
 async function loadPage(page) {
 
-    const response =
-        await fetch(`pages/${page}.html`);
+    try {
 
-    const html =
-        await response.text();
+        const response = await fetch(`pages/${page}.html`);
 
-    document
-        .getElementById("content").innerHTML = html;
+        if (!response.ok) {
+            throw new Error(`${page}.html not found`);
+        }
 
+        document.getElementById("content").innerHTML =
+            await response.text();
+
+    } catch (err) {
+
+        document.getElementById("content").innerHTML = `
+            <div class="card">
+                <h2>404</h2>
+                <p>${err.message}</p>
+            </div>
+        `;
+
+        console.error(err);
+    }
 }
-
-window.addEventListener("hashchange", () => {
-
-    const page =
-        location.hash.replace("#", "") || "dashboard";
-
-    loadPage(page);
-
-});
-
-window.dispatchEvent(new Event("hashchange"));
