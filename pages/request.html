@@ -1,13 +1,195 @@
 <div class="page">
 
     <div class="page-header">
+
         <h2>My Requests</h2>
-        <p>View your submitted accommodation requests.</p>
+
+        <p>
+            View the status of your accommodation requests.
+        </p>
+
     </div>
 
-    <div class="card">
-        <h3>Coming Soon...</h3>
-        <p>This page will display all accommodation requests raised by the logged-in user.</p>
-    </div>
+    <!-- Filter Section -->
+
+    <section class="card">
+
+        <h3>Search & Filter</h3>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>Booking Status</label>
+
+                <select id="statusFilter">
+
+                    <option value="">All</option>
+
+                    <option>Pending</option>
+
+                    <option>Approved</option>
+
+                    <option>Rejected</option>
+
+                    <option>Cancelled</option>
+
+                    <option>Completed</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Department</label>
+
+                <select id="departmentFilter">
+
+                    <option value="">All Departments</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>From Date</label>
+
+                <input type="date">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>To Date</label>
+
+                <input type="date">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Request Table -->
+
+    <section class="card">
+
+        <h3>Accommodation Requests</h3>
+
+        <table class="request-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Request ID</th>
+
+                    <th>Department</th>
+
+                    <th>Contractor</th>
+
+                    <th>Check-In</th>
+
+                    <th>Check-Out</th>
+
+                    <th>Persons</th>
+
+                    <th>Status</th>
+
+                    <th>Room</th>
+
+                    <th>View</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>REQ-0001</td>
+
+                    <td>Boiler</td>
+
+                    <td>ABC Engineering</td>
+
+                    <td>29-Jul-2026</td>
+
+                    <td>31-Jul-2026</td>
+
+                    <td>8</td>
+
+                    <td>Pending</td>
+
+                    <td>-</td>
+
+                    <td>
+
+                        <button type="button">
+
+                            View
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>REQ-0002</td>
+
+                    <td>Turbine</td>
+
+                    <td>XYZ Services</td>
+
+                    <td>01-Aug-2026</td>
+
+                    <td>05-Aug-2026</td>
+
+                    <td>15</td>
+
+                    <td>Approved</td>
+
+                    <td>101A,102B</td>
+
+                    <td>
+
+                        <button type="button">
+
+                            View
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- Request Details Drawer -->
+
+    <aside id="requestDrawer" class="drawer">
+
+        <div class="drawer-header">
+
+            <h3>Request Details</h3>
+
+        </div>
+
+        <div class="drawer-body">
+
+            <p>Select a request to view complete details.</p>
+
+        </div>
+
+    </aside>
 
 </div>
