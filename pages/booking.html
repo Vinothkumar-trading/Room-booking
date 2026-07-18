@@ -1,0 +1,280 @@
+<div class="page">
+
+    <div class="page-header">
+        <h2>New Accommodation Request</h2>
+        <p>Create a new accommodation request for shutdown activities.</p>
+    </div>
+
+    <form id="bookingForm">
+
+        <!-- ===================================================== -->
+        <!-- General Information -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h3>General Information</h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="department">Department <span>*</span></label>
+                    <select id="department" required>
+                        <option value="">Select Department</option>
+                        <option>Boiler</option>
+                        <option>Turbine</option>
+                        <option>Electrical</option>
+                        <option>C&I</option>
+                        <option>CHP</option>
+                        <option>Civil</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="shutdown">Shutdown</label>
+                    <select id="shutdown">
+                        <option>Annual Shutdown 2026</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="po">PO Number <span>*</span></label>
+                    <input id="po" type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="raisedBy">Request Raised By</label>
+                    <input id="raisedBy"
+                           type="text"
+                           value="Vinoth Kumar"
+                           readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="contractor">Contractor Name <span>*</span></label>
+                    <input id="contractor" type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="activity">Activity Area</label>
+                    <select id="activity">
+                        <option value="">Select Activity</option>
+                        <option>Boiler</option>
+                        <option>Turbine</option>
+                        <option>CHP</option>
+                        <option>Electrical</option>
+                        <option>Civil</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="task">Task Description <span>*</span></label>
+                    <textarea id="task"
+                              rows="3"
+                              required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Person <span>*</span></label>
+                    <input id="contact" type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number <span>*</span></label>
+                    <input id="mobile"
+                           type="tel"
+                           maxlength="10"
+                           required>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- Booking Details -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h3>Booking Details</h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Check-In Date <span>*</span></label>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Check-Out Date <span>*</span></label>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>No. of Persons <span>*</span></label>
+                    <input type="number"
+                           min="1"
+                           value="1"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Occupancy</label>
+
+                    <select>
+
+                        <option>No Preference</option>
+                        <option>Single Occupancy</option>
+                        <option>Double Occupancy</option>
+                        <option>Triple Occupancy</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- Person Details -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <div class="section-header">
+
+                <h3>Person Details</h3>
+
+                <button type="button"
+                        id="addPerson">
+
+                    + Add Person
+
+                </button>
+
+            </div>
+
+            <table class="person-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th width="60">#</th>
+
+                        <th>Name</th>
+
+                        <th width="140">Gender</th>
+
+                        <th width="80">Remove</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="personTable">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>
+
+                            <input type="text">
+
+                        </td>
+
+                        <td>
+
+                            <select>
+
+                                <option>Male</option>
+
+                                <option>Female</option>
+
+                            </select>
+
+                        </td>
+
+                        <td>
+
+                            <button type="button">
+
+                                ×
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- Additional Requirements -->
+        <!-- ===================================================== -->
+
+        <section class="card">
+
+            <h3>Additional Requirements</h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>Vehicle Parking</label>
+
+                    <select>
+
+                        <option>No</option>
+
+                        <option>Yes</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group full-width">
+
+                    <label>Special Requirements</label>
+
+                    <textarea rows="3"></textarea>
+
+                </div>
+
+                <div class="form-group full-width">
+
+                    <label>Remarks</label>
+
+                    <textarea rows="4"></textarea>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- Submit -->
+        <!-- ===================================================== -->
+
+        <div class="form-actions">
+
+            <button type="submit"
+                    class="primary-btn">
+
+                Submit Request
+
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
