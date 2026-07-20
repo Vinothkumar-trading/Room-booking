@@ -1,3 +1,7 @@
+/* ==========================================
+   Base Button
+========================================== */
+
 .btn{
 
     display:inline-flex;
@@ -6,11 +10,15 @@
 
     justify-content:center;
 
-    padding:12px 22px;
+    gap:8px;
 
-    border:none;
+    min-width:100px;
+
+    padding:12px 20px;
 
     border-radius:8px;
+
+    border:none;
 
     cursor:pointer;
 
@@ -19,6 +27,8 @@
     transition:.2s;
 
 }
+
+/* Primary */
 
 .btn-primary{
 
@@ -34,18 +44,40 @@
 
 }
 
+/* Outline */
+
 .btn-outline{
 
     background:white;
 
     border:1px solid var(--border);
 
+    color:var(--text-primary);
+
 }
+
+.btn-outline:hover{
+
+    background:#EEF4FF;
+
+}
+
+/* Danger */
 
 .btn-danger{
 
     background:var(--danger);
 
     color:white;
+
+}
+
+.btn-sm{
+
+    min-width:80px;
+
+    padding:8px 14px;
+
+    font-size:14px;
 
 }

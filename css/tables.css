@@ -1,0 +1,51 @@
+/* ==========================================
+   Table
+========================================== */
+
+.table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.table th{
+
+    background:#F8FAFC;
+
+    padding:16px;
+
+    text-align:left;
+
+    font-weight:600;
+
+    border-bottom:2px solid var(--border);
+
+}
+
+.table td{
+
+    padding:16px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.table tbody tr{
+
+    transition:.2s;
+
+}
+
+.table tbody tr:nth-child(even){
+
+    background:#FAFBFC;
+
+}
+
+.table tbody tr:hover{
+
+    background:#EEF4FF;
+
+}
