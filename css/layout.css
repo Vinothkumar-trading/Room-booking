@@ -1,0 +1,49 @@
+body{
+
+    min-height:100vh;
+
+}
+
+.app{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    min-height:100vh;
+
+}
+
+.sidebar{
+
+    background:#173A63;
+
+    color:white;
+
+}
+
+.main{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.header{
+
+    background:white;
+
+    padding:20px 30px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.content{
+
+    padding:30px;
+
+    overflow:auto;
+
+}

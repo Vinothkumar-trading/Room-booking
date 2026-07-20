@@ -1,44 +1,14 @@
-body{
-    margin:0;
-    font-family:Segoe UI,Arial,sans-serif;
-    background:#f3f4f6;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    height:100vh;
-}
-
-.card{
-
-    width:420px;
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:10px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-
-    text-align:center;
-}
-
-button{
-
-    padding:10px 20px;
-
-    cursor:pointer;
-
-    margin-top:20px;
-}
-
-#result{
-
-    margin-top:20px;
-
-    color:green;
-
-    font-weight:bold;
-}
+@import "variables.css";
+@import "reset.css";
+@import "layout.css";
+@import "sidebar.css";
+@import "header.css";
+@import "cards.css";
+@import "forms.css";
+@import "tables.css";
+@import "buttons.css";
+@import "badges.css";
+@import "drawer.css";
+@import "calendar.css";
+@import "gantt.css";
+@import "responsive.css";
