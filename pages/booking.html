@@ -95,45 +95,106 @@
         <!-- Booking Details -->
         <!-- ===================================================== -->
 
-        <section class="card">
+        <div class="card">
 
             <h3>Booking Details</h3>
 
             <div class="form-grid">
 
                 <div class="form-group">
-                    <label>Check-In Date <span>*</span></label>
-                    <input type="date" required>
+
+                    <label for="checkinDate">
+                        Check-In Date <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="checkinDate"
+                        name="checkinDate"
+                        required>
+
                 </div>
 
                 <div class="form-group">
-                    <label>Check-Out Date <span>*</span></label>
-                    <input type="date" required>
+
+                    <label for="checkinTime">
+                        Check-In Time <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="time"
+                        id="checkinTime"
+                        name="checkinTime"
+                        required>
+
                 </div>
 
                 <div class="form-group">
-                    <label>No. of Persons <span>*</span></label>
-                    <input type="number"
-                           min="1"
-                           value="1"
-                           required>
+
+                    <label for="checkoutDate">
+                        Check-Out Date <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="checkoutDate"
+                        name="checkoutDate"
+                        required>
+
                 </div>
 
                 <div class="form-group">
-                    <label>Preferred Occupancy</label>
 
-                    <select>
+                    <label for="checkoutTime">
+                        Check-Out Time <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="time"
+                        id="checkoutTime"
+                        name="checkoutTime"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="persons">
+                        No. of Persons <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="number"
+                        id="persons"
+                        min="1"
+                        value="1"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="occupancy">
+                        Preferred Occupancy
+                    </label>
+
+                    <select id="occupancy">
+
+                        <option>Single</option>
+
+                        <option>Double</option>
+
+                        <option>Triple</option>
 
                         <option>No Preference</option>
-                        <option>Single Occupancy</option>
-                        <option>Double Occupancy</option>
-                        <option>Triple Occupancy</option>
 
                     </select>
 
                 </div>
 
             </div>
+
+        </div>
 
         </section>
 
