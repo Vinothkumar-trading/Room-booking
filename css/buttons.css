@@ -42,6 +42,12 @@
 
     background:var(--primary-hover);
 
+    background:white;
+
+    border:1px solid var(--border);
+
+    color:var(--text-primary);
+
 }
 
 /* Outline */
@@ -68,7 +74,7 @@
 
     background:var(--danger);
 
-    color:white;
+    color:rgb(255, 255, 255);
 
 }
 
