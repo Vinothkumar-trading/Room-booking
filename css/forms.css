@@ -1,0 +1,103 @@
+/* ==========================================
+   Form Grid
+========================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+/* ==========================================
+   Form Group
+========================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.full-width{
+
+    grid-column:1 / -1;
+
+}
+
+/* ==========================================
+   Labels
+========================================== */
+
+.form-group label{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+}
+
+/* ==========================================
+   Inputs
+========================================== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:12px 14px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    background:white;
+
+    transition:.2s;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+textarea{
+
+    resize:vertical;
+
+}
+
+/* ==========================================
+   Form Actions
+========================================== */
+
+.form-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:32px;
+
+    gap:16px;
+
+}

@@ -1,0 +1,67 @@
+/* ==========================================
+   Page Header
+========================================== */
+
+.page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.page-header{
+
+    margin-bottom:8px;
+
+}
+
+.page-header h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:var(--text-primary);
+
+    margin-bottom:6px;
+
+}
+
+.page-header p{
+
+    color:var(--text-secondary);
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   Card
+========================================== */
+
+.card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:30px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.card h3{
+
+    font-size:24px;
+
+    margin-bottom:24px;
+
+    color:var(--text-primary);
+
+}
