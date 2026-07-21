@@ -1,23 +1,245 @@
-<div class="dashboard">
+<div class="page">
 
-    <div class="card">
-        <h3>Active Requests</h3>
-        <h1>0</h1>
+    <div class="page-header">
+
+        <h2>Dashboard</h2>
+
+        <p>Accommodation booking overview</p>
+
     </div>
 
-    <div class="card">
-        <h3>Pending Approval</h3>
-        <h1>0</h1>
+    <!-- KPI Cards -->
+
+    <div class="dashboard">
+
+        <div class="card">
+
+            <h3>Active Requests</h3>
+
+            <h1>0</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Pending Approval</h3>
+
+            <h1>0</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Approved</h3>
+
+            <h1>0</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Completed</h3>
+
+            <h1>0</h1>
+
+        </div>
+
     </div>
 
-    <div class="card">
-        <h3>Approved</h3>
-        <h1>0</h1>
+    <!-- Dashboard Body -->
+
+    <div class="dashboard-grid">
+
+        <!-- Upcoming Check-Ins -->
+
+        <div class="card">
+
+            <h3>Upcoming Check-Ins</h3>
+
+            <div id="upcoming-checkins">
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+
+                        29 Jul
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h4>Annual Shutdown 2026</h4>
+
+                        <p>ABC Engineering</p>
+
+                        <small>
+                            09:00 AM • 12 Persons
+                        </small>
+
+                    </div>
+
+                    <span class="badge badge-success">
+
+                        Approved
+
+                    </span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+
+                        31 Jul
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h4>TG Shutdown</h4>
+
+                        <p>XYZ Contractors</p>
+
+                        <small>
+                            11:00 AM • 8 Persons
+                        </small>
+
+                    </div>
+
+                    <span class="badge badge-warning">
+
+                        Pending
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Upcoming Check-Outs -->
+
+        <div class="card">
+
+            <h3>Upcoming Check-Outs</h3>
+
+            <div id="upcoming-checkouts">
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+
+                        30 Jul
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h4>Boiler Shutdown</h4>
+
+                        <p>Room 103</p>
+
+                        <small>
+                            06:00 PM
+                        </small>
+
+                    </div>
+
+                    <span class="badge badge-success">
+
+                        Approved
+
+                    </span>
+
+                </div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+
+                        02 Aug
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h4>CHP Shutdown</h4>
+
+                        <p>Room 205</p>
+
+                        <small>
+                            10:00 AM
+                        </small>
+
+                    </div>
+
+                    <span class="badge badge-success">
+
+                        Approved
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
+    <!-- Recent Activity -->
+
     <div class="card">
-        <h3>Rejected</h3>
-        <h1>0</h1>
+
+        <h3>Recent Activity</h3>
+
+        <div id="recent-activity">
+
+            <div class="activity-item">
+
+                <div class="activity-icon">✓</div>
+
+                <div>
+
+                    <strong>Request Approved</strong>
+
+                    <p>Today, 10:30 AM</p>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <div class="activity-icon">✎</div>
+
+                <div>
+
+                    <strong>Booking Modified</strong>
+
+                    <p>Yesterday, 03:45 PM</p>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <div class="activity-icon">⏳</div>
+
+                <div>
+
+                    <strong>Pending HR Approval</strong>
+
+                    <p>Yesterday, 09:10 AM</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
 </div>

@@ -1,0 +1,59 @@
+.activity-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:14px 0;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+.activity-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.activity-icon{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary-light);
+
+    color:var(--primary-color);
+
+    font-weight:bold;
+
+    font-size:18px;
+
+}
+
+.activity-item strong{
+
+    display:block;
+
+    margin-bottom:4px;
+
+}
+
+.activity-item p{
+
+    font-size:14px;
+
+    color:var(--text-muted);
+
+}

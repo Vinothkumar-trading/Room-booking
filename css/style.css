@@ -11,4 +11,7 @@
 @import "drawer.css";
 @import "calendar.css";
 @import "gantt.css";
+@import "dashboard.css";
+@import "timeline.css";
+@import "activity.css";
 @import "responsive.css";
